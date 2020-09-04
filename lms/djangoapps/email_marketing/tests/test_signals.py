@@ -302,7 +302,7 @@ class EmailMarketingTests(TestCase):
         """
         update_email_marketing_config(enabled=False)
 
-        update_user.delay(self.user.username)
+        update_user.delay(self.user.username, self.user.email)
         self.assertFalse(mock_log_error.called)
         self.assertFalse(mock_sailthru.called)
 
