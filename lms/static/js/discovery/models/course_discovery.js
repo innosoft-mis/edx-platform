@@ -23,6 +23,7 @@
 
             parse: function(response) {
                 var courses = response.results || [];
+                console.log(courses);
                 var facets = response.facets || {};
                 this.courseCards.add(_.pluck(courses, 'data'));
 

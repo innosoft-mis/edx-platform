@@ -71,7 +71,6 @@
 
             parse: function(response) {
                 var results = response.results || [];
-                console.log(results);
                 this.latestModelsCount = results.length;
                 this.totalCount = response.total;
                 if (typeof response.facets !== 'undefined') {
