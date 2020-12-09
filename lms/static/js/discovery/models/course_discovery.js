@@ -23,6 +23,8 @@
 
             parse: function(response) {
                 var courses = response.results || [];
+                console.log(courses);
+                courses.sort((a, b) => (a._id > b._id) ? 1 : -1);
                 var facets = response.facets || {};
                 this.courseCards.add(_.pluck(courses, 'data'));
 
