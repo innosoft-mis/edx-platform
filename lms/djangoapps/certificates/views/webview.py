@@ -107,10 +107,10 @@ def _update_certificate_context(context, course, user_certificate, platform_name
 
     # Translators:  The format of the date includes the full name of the month
     date = display_date_for_certificate(course, user_certificate)
-    context['certificate_date_issued'] = _(u'{month} {day}, {year}').format(
+    context['certificate_date_issued'] = _(u'{day} {month} {year}').format(
         month=strftime_localized(date, "%B"),
         day=date.day,
-        year=date.year
+        year=date.year+543
     )
 
     # Translators:  This text represents the verification of the certificate
