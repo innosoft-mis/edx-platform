@@ -817,7 +817,7 @@ class XModuleMixin(XModuleFields, XBlock):
 
         if self.display_name:
             display_text = _(
-                u'{display_name} สามารถเข้าใช้งานได้เฉพาะผู้เรียนที่ลงทะเบียนแล้วเท่านั้น '
+                u'สามารถเข้าใช้งานได้เฉพาะผู้เรียนที่ลงทะเบียนแล้วเท่านั้น '
                 'กรุณาเข้าสู่ระบบหรือสร้างบัญชีผู้ใช้ และเข้าเรียนหลักสูตรนี้เพื่อใช้งาน'
             ).format(
                 display_name=self.display_name
