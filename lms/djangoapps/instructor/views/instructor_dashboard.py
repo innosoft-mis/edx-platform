@@ -682,7 +682,7 @@ def _section_data_download(course, access):
     course_key = course.id
 
     show_proctored_report_button = (
-        settings.FEATURES.get('ENABLE_SPECIAL_EXAMS', True) and
+        settings.FEATURES.get('ENABLE_SPECIAL_EXAMS', False) and
         course.enable_proctored_exams
     )
 

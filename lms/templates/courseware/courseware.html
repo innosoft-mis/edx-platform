@@ -18,7 +18,7 @@ from openedx.features.course_experience import course_home_page_title, COURSE_OU
 <%
    include_special_exams = (
    request.user.is_authenticated and
-   settings.FEATURES.get('ENABLE_SPECIAL_EXAMS', True) and
+   settings.FEATURES.get('ENABLE_SPECIAL_EXAMS', False) and
    (course.enable_proctored_exams or course.enable_timed_exams)
    )
 %>
