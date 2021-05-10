@@ -278,7 +278,7 @@ FEATURES = {
     'ENABLE_CREDIT_ELIGIBILITY': ENABLE_CREDIT_ELIGIBILITY,
 
     # Special Exams, aka Timed and Proctored Exams
-    'ENABLE_SPECIAL_EXAMS': True,
+    'ENABLE_SPECIAL_EXAMS': False,
 
     'ORGANIZATIONS_APP': False,
 
