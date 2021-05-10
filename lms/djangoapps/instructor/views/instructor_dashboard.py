@@ -191,7 +191,7 @@ def instructor_dashboard_2(request, course_id):
     ])
     course_has_special_exams = course.enable_proctored_exams or course.enable_timed_exams
     can_see_special_exams = course_has_special_exams and user_has_access and settings.FEATURES.get(
-        'ENABLE_SPECIAL_EXAMS', False)
+        'ENABLE_SPECIAL_EXAMS', True)
 
     if can_see_special_exams:
         sections.append(_section_special_exams(course, access))
@@ -682,7 +682,7 @@ def _section_data_download(course, access):
     course_key = course.id
 
     show_proctored_report_button = (
-        settings.FEATURES.get('ENABLE_SPECIAL_EXAMS', False) and
+        settings.FEATURES.get('ENABLE_SPECIAL_EXAMS', True) and
         course.enable_proctored_exams
     )
 

@@ -110,7 +110,7 @@ class TestProctoringDashboardViews(SharedModuleStoreTestCase):
         self.instructor.save()
         self._assert_proctoring_tab_available(False)
 
-    @patch.dict(settings.FEATURES, {'ENABLE_SPECIAL_EXAMS': False})
+    @patch.dict(settings.FEATURES, {'ENABLE_SPECIAL_EXAMS': True})
     @ddt.data(
         (True, False),
         (False, True)

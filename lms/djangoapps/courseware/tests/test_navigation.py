@@ -291,7 +291,7 @@ class TestNavigation(SharedModuleStoreTestCase, LoginEnrollmentTestCase):
 
         test_course_id = text_type(self.test_course_proctored.id)
 
-        with patch.dict(settings.FEATURES, {'ENABLE_SPECIAL_EXAMS': False}):
+        with patch.dict(settings.FEATURES, {'ENABLE_SPECIAL_EXAMS': True}):
             url = reverse(
                 'courseware',
                 kwargs={'course_id': test_course_id}

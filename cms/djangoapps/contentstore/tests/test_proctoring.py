@@ -213,7 +213,7 @@ class TestProctoredExams(ModuleStoreTestCase):
         exam = exams[0]
         self.assertEqual(exam['is_active'], False)
 
-    @patch.dict('django.conf.settings.FEATURES', {'ENABLE_SPECIAL_EXAMS': False})
+    @patch.dict('django.conf.settings.FEATURES', {'ENABLE_SPECIAL_EXAMS': True})
     def test_feature_flag_off(self):
         """
         Make sure the feature flag is honored
