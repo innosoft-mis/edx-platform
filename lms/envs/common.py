@@ -463,7 +463,7 @@ FEATURES = {
     # .. toggle_tickets: https://openedx.atlassian.net/browse/EDUCATOR-4951
     # .. toggle_status: supported
     # .. toggle_warnings: None
-    'ENABLE_ORA_ALL_FILE_URLS': False,
+    'ENABLE_ORA_ALL_FILE_URLS': True,
 
     # .. toggle_name: ENABLE_ORA_USER_STATE_UPLOAD_DATA
     # .. toggle_implementation: DjangoSetting
@@ -477,7 +477,7 @@ FEATURES = {
     # .. toggle_tickets: https://openedx.atlassian.net/browse/EDUCATOR-4951
     # .. toggle_status: supported
     # .. toggle_warnings: None
-    'ENABLE_ORA_USER_STATE_UPLOAD_DATA': False,
+    'ENABLE_ORA_USER_STATE_UPLOAD_DATA': True,
 }
 
 # Settings for the course reviews tool template and identification key, set either to None to disable course reviews
