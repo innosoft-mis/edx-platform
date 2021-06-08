@@ -29,4 +29,4 @@ elif SWIFT_AUTH_URL and SWIFT_USERNAME and SWIFT_KEY:
 else:
     DEFAULT_FILE_STORAGE = 'django.core.files.storage.FileSystemStorage'
 
-ORA2_FILEUPLOAD_BACKEND = "django"
+ORA2_FILEUPLOAD_BACKEND = "filesystem"
